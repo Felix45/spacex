@@ -1,5 +1,5 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
-import { fetchMissions } from '../../services/missionsService';
+import fetchMissions from '../../services/missionsService';
 
 const initialState = {
   isLoading: false,
