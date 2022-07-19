@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Row } from 'react-bootstrap';
+import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
 import { missionData } from '../data/mock';
 import MissionList from './MissionList';

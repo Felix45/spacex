@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Container } from 'react-bootstrap';
+import Container from 'react-bootstrap/Container';
 import RocketList from './RocketList';
 import { ships } from '../data/mock';
 
