@@ -41,9 +41,9 @@ run `npm run start`.
 - GitHub: [@teckim](https://github.com/teckim)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/baheddi-hakim/)
 
-**Felix**
+**Felix Ouma**
 
-- GitHub: [@teckim](https://github.com/felix45)
+- GitHub: [@Felix45](https://github.com/felix45)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/felix-ouma/)
 
 ## 🤝 Contributing
