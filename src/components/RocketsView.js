@@ -1,13 +1,20 @@
-import React, { useState } from 'react';
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import Container from 'react-bootstrap/Container';
 import RocketList from './RocketList';
-import { ships } from '../data/mock';
+import { fetchRocketsThunk } from '../redux/slices/rocketsSlice';
 
 const RocketsView = () => {
-  const [rockets] = useState(ships);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchRocketsThunk());
+  }, []);
+
+  const { rockets } = useSelector((state) => state.rockets);
 
   return (
-    <Container fluid>
+    <Container>
       <RocketList rockets={rockets} />
     </Container>
   );

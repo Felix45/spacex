@@ -12,13 +12,13 @@ const Rocket = (props) => {
   } = rocket;
 
   return (
-    <Row className="m-4 my-5">
-      <Col md={6} lg={2}>
+    <Row className="my-5">
+      <Col md={6} lg={3}>
         <Card>
-          <Card.Img variant="top" src={flickr_images} alt={rocket_name} />
+          <Card.Img variant="top" src={flickr_images[0]} alt={rocket_name} />
         </Card>
       </Col>
-      <Col md={6} lg={10}>
+      <Col md={6} lg={9}>
         <Card>
           <Card.Body>
             <Card.Title>{rocket_name}</Card.Title>
