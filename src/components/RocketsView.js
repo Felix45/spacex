@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Container } from 'react-bootstrap';
 import RocketList from './RocketList';
-import ships from '../data/data';
+import { ships } from '../data/mock';
 
 const RocketsView = () => {
   const [rockets] = useState(ships);
