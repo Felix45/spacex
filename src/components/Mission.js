@@ -11,11 +11,11 @@ const Mission = (props) => {
     <tr>
       <td className="fw-bold">{ mission_name }</td>
       <td>{ description }</td>
-      <td className="mx-1">
-        <Badge bg="secondary">Not a member</Badge>
+      <td className="align-middle">
+        <Badge className="text-uppercase" bg="secondary">Not a member</Badge>
       </td>
-      <td className="p-2">
-        <Button id={mission_id} variant="outline-dark" className="p-0" size="sm">Join Mission</Button>
+      <td className="align-middle">
+        <Button id={mission_id} className="w-100 text-uppercase" variant="outline-dark">Join Mission</Button>
       </td>
     </tr>
   );
