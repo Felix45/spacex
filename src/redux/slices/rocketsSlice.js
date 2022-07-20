@@ -18,6 +18,13 @@ export const fetchRocketsThunk = createAsyncThunk(
 const rocketsSlice = createSlice({
   name: 'rockets',
   initialState,
+  reducers: {
+    book(state, action) {
+      const index = state.rockets.findIndex((rocket) => rocket.id === action.payload.id);
+
+      state.rockets.splice(index, 1, { ...state.rockets[index], booked: action.payload.booked });
+    },
+  },
   extraReducers: {
     [fetchRocketsThunk.fulfilled]: (state, action) => {
       state.isLoading = false;
@@ -27,5 +34,7 @@ const rocketsSlice = createSlice({
     [fetchRocketsThunk.rejected]: (state) => { state.isFaild = true; },
   },
 });
+
+export const { book } = rocketsSlice.actions;
 
 export default rocketsSlice.reducer;
