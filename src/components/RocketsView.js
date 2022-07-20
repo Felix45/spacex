@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { useSelector } from 'react-redux';
 import Container from 'react-bootstrap/Container';
 import RocketList from './RocketList';
-import { ships } from '../data/mock';
 
 const RocketsView = () => {
-  const [rockets] = useState(ships);
+  const { rockets } = useSelector((state) => state.rockets);
 
   return (
-    <Container fluid>
+    <Container>
       <RocketList rockets={rockets} />
     </Container>
   );
