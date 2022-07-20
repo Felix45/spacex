@@ -7,13 +7,13 @@ const MissionList = (props) => {
   const { missions } = props;
 
   return (
-    <Table striped bordered size="sm">
+    <Table striped bordered responsive>
       <thead>
         <tr>
-          <th>Mission</th>
+          <th width="100">Mission</th>
           <th>Description</th>
-          <th>Status</th>
-          <th> </th>
+          <th width="100">Status</th>
+          <th width="150"> </th>
         </tr>
       </thead>
       <tbody>
