@@ -1,10 +1,17 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Image from 'react-bootstrap/Image';
 import LogoImage from '../assets/images/logo.png';
+
+const navItems = [
+  { to: '/', name: 'Rockets' },
+  { to: '/missions', name: 'Missions' },
+  { to: '/profile', name: 'Profile' },
+];
+const linkClassNames = ({ isActive }) => (isActive ? 'text-primary text-decoration-none' : 'text-secondary text-decoration-none');
 
 const Header = () => (
   <header>
@@ -17,10 +24,21 @@ const Header = () => (
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link as={Link} to="/">Rockets</Nav.Link>
-            <Nav.Link as={Link} to="/missions">Missions</Nav.Link>
-            <div className="vr d-none d-md-block m-2" />
-            <Nav.Link as={Link} to="/profile">My Profile</Nav.Link>
+            {
+              navItems.map((navItem) => (
+                <>
+                  {navItem.name === 'Profile' && <div className="vr d-none d-md-block m-2" />}
+                  <Nav.Link key={navItem.name} as="div">
+                    <NavLink
+                      className={linkClassNames}
+                      to={navItem.to}
+                    >
+                      {navItem.name}
+                    </NavLink>
+                  </Nav.Link>
+                </>
+              ))
+            }
           </Nav>
         </Navbar.Collapse>
       </Container>
