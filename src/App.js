@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import RocketsView from './components/RocketsView';
 import MissionsView from './components/MissionsView';
+import ProfileView from './components/ProfileView';
 import Layout from './components/Layout';
 
 const App = () => (
@@ -10,7 +11,7 @@ const App = () => (
       <Route path="/" element={<Layout />}>
         <Route path="/" element={<RocketsView />} />
         <Route path="/missions" element={<MissionsView />} />
-        <Route path="/profile" element={<div>Profile View</div>} />
+        <Route path="/profile" element={<ProfileView />} />
       </Route>
     </Routes>
   </Router>
