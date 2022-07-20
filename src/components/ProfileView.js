@@ -1,12 +1,10 @@
 import React from 'react';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import { useSelector } from 'react-redux';
 import ListGroup from 'react-bootstrap/ListGroup';
-import ListGroupItem from 'react-bootstrap/ListGroupItem';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 const ProfileView = () => {
-
   const { rockets } = useSelector((state) => state.rockets);
   const { items } = useSelector((state) => state.missions);
 
@@ -20,7 +18,7 @@ const ProfileView = () => {
         <ListGroup>
           {
             missions.map((mission) => (
-              <ListGroupItem key={mission.mission_id}>{mission.mission_name}</ListGroupItem>
+              <ListGroup.Item key={mission.mission_id}>{mission.mission_name}</ListGroup.Item>
             ))
           }
         </ListGroup>

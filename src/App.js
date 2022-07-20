@@ -4,7 +4,6 @@ import RocketsView from './components/RocketsView';
 import MissionsView from './components/MissionsView';
 import ProfileView from './components/ProfileView';
 import Layout from './components/Layout';
-import ProfileView from './components/ProfileView';
 
 const App = () => (
   <Router>
@@ -12,7 +11,7 @@ const App = () => (
       <Route path="/" element={<Layout />}>
         <Route path="/" element={<RocketsView />} />
         <Route path="/missions" element={<MissionsView />} />
-        <Route path="/profile" element={<ProfileView />} />
+        <Route path="/profile" element={<div>Profile View</div>} />
       </Route>
     </Routes>
   </Router>
