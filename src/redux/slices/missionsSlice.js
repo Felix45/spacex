@@ -8,9 +8,10 @@ const initialState = {
 };
 
 export const fetchMissionsThunk = createAsyncThunk(
-  '/fetchMissions',
+  'missions/fetchMissions',
   async () => {
     const { data } = await fetchMissions();
+
     return data;
   },
 );
