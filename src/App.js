@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import RocketsView from './components/RocketsView';
 import MissionsView from './components/MissionsView';
+import ProfileView from './components/ProfileView';
 import Layout from './components/Layout';
 import ProfileView from './components/ProfileView';
 
