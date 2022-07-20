@@ -4,14 +4,14 @@ import fetchMissions from '../../services/missionsService';
 const initialState = {
   isLoading: false,
   isFaild: false,
-  items: [],
+  items: [{}],
 };
 
 export const fetchMissionsThunk = createAsyncThunk(
   'missions/fetchMissions',
   async () => {
     const { data } = await fetchMissions();
-
+    data.forEach((item) => { item.reserved = false; });
     return data;
   },
 );
@@ -19,6 +19,16 @@ export const fetchMissionsThunk = createAsyncThunk(
 const missionsSlice = createSlice({
   name: 'missions',
   initialState,
+  reducers: {
+    joinMission(state, action) {
+      state.items = state.items.map((mission) => {
+        if (mission.mission_id === action.payload.mission_id) {
+          return { ...mission, reserved: !mission.reserved };
+        }
+        return mission;
+      });
+    },
+  },
   extraReducers: {
     [fetchMissionsThunk.fulfilled]: (state, action) => {
       state.isLoading = false;
@@ -28,5 +38,5 @@ const missionsSlice = createSlice({
     [fetchMissionsThunk.rejected]: (state) => { state.isFaild = true; },
   },
 });
-
+export const { joinMission } = missionsSlice.actions;
 export default missionsSlice.reducer;
