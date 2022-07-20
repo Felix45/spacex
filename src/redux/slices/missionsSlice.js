@@ -21,12 +21,13 @@ const missionsSlice = createSlice({
   initialState,
   reducers: {
     joinMission(state, action) {
-      state.items = state.items.map((mission) => {
+      const newItems = state.items.map((mission) => {
         if (mission.mission_id === action.payload.mission_id) {
           return { ...mission, reserved: !mission.reserved };
         }
         return mission;
       });
+      return { ...state, items: newItems };
     },
   },
   extraReducers: {
