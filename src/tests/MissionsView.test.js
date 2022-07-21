@@ -4,6 +4,6 @@ import store from '../redux';
 import MissionsView from '../components/MissionsView';
 
 test('Missions view renders correctly', () => {
-  const tree = renderer.create(<Provider store={store}><MissionsView /></Provider>).toJSON();
+  const tree = renderer.create(<Provider store={store({})}><MissionsView /></Provider>).toJSON();
   expect(tree).toMatchSnapshot();
 });

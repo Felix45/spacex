@@ -6,7 +6,7 @@ import MissionList from '../components/MissionList';
 
 test('MissionsList component renders correctly', () => {
   const tree = renderer.create(
-    <Provider store={store}>
+    <Provider store={store({})}>
       <MissionList missions={missionData} />
     </Provider>,
   ).toJSON();
