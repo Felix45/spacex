@@ -1,0 +1,132 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MissionsList component renders correctly 1`] = `
+<div
+  className="table-responsive"
+>
+  <table
+    className="table table-striped table-bordered"
+  >
+    <thead>
+      <tr>
+        <th
+          width="100"
+        >
+          Mission
+        </th>
+        <th>
+          Description
+        </th>
+        <th
+          width="100"
+        >
+          Status
+        </th>
+        <th
+          width="150"
+        >
+           
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td
+          className="fw-bold"
+        >
+          Thaicom
+        </td>
+        <td>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, consequatur ut. Distinctio nostrum voluptatibus recusandae eum, velit dolores mollitia nam aliquid consectetur enim corporis perspiciatis repudiandae animi, sed hic tenetur!
+        </td>
+        <td
+          className="align-middle"
+        >
+          <span
+            className="text-uppercase badge bg-secondary"
+          >
+            Not a member
+          </span>
+        </td>
+        <td
+          className="align-middle"
+        >
+          <button
+            className="w-100 text-uppercase btn btn-outline-dark"
+            disabled={false}
+            id={1}
+            onClick={[Function]}
+            type="button"
+          >
+            Join Mission
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="fw-bold"
+        >
+          Telstar
+        </td>
+        <td>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, consequatur ut. Distinctio nostrum voluptatibus recusandae eum, velit dolores mollitia nam aliquid consectetur enim corporis perspiciatis repudiandae animi, sed hic tenetur!
+        </td>
+        <td
+          className="align-middle"
+        >
+          <span
+            className="text-uppercase badge bg-info"
+          >
+             Active Member 
+          </span>
+        </td>
+        <td
+          className="align-middle"
+        >
+          <button
+            className="w-100 text-uppercase btn btn-outline-danger"
+            disabled={false}
+            id={2}
+            onClick={[Function]}
+            type="button"
+          >
+            Leave Mission
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="fw-bold"
+        >
+          JCSAT
+        </td>
+        <td>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, consequatur ut. Distinctio nostrum voluptatibus recusandae eum, velit dolores mollitia nam aliquid consectetur enim corporis perspiciatis repudiandae animi, sed hic tenetur!
+        </td>
+        <td
+          className="align-middle"
+        >
+          <span
+            className="text-uppercase badge bg-info"
+          >
+             Active Member 
+          </span>
+        </td>
+        <td
+          className="align-middle"
+        >
+          <button
+            className="w-100 text-uppercase btn btn-outline-danger"
+            disabled={false}
+            id={3}
+            onClick={[Function]}
+            type="button"
+          >
+            Leave Mission
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;

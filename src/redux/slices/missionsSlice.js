@@ -4,7 +4,7 @@ import fetchMissions from '../../services/missionsService';
 const initialState = {
   isLoading: false,
   isFaild: false,
-  items: [{}],
+  items: [],
 };
 
 export const fetchMissionsThunk = createAsyncThunk(

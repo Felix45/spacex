@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Missions view renders correctly 1`] = `
+<div
+  className="row"
+>
+  <div
+    className="table-responsive"
+  >
+    <table
+      className="table table-striped table-bordered"
+    >
+      <thead>
+        <tr>
+          <th
+            width="100"
+          >
+            Mission
+          </th>
+          <th>
+            Description
+          </th>
+          <th
+            width="100"
+          >
+            Status
+          </th>
+          <th
+            width="150"
+          >
+             
+          </th>
+        </tr>
+      </thead>
+      <tbody />
+    </table>
+  </div>
+</div>
+`;
