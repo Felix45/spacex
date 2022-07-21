@@ -9,6 +9,16 @@ exports[`ProfileView component Renders correctly 1`] = `
       class="col-md-6"
     >
       <h2>
+        My Missions
+      </h2>
+      <div
+        class="list-group"
+      />
+    </div>
+    <div
+      class="col-md-6"
+    >
+      <h2>
         My Rockets
       </h2>
       <div
