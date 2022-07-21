@@ -23,16 +23,19 @@ const missionData = [
   {
     mission_id: 1,
     mission_name: 'Thaicom',
+    reserved: false,
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, consequatur ut. Distinctio nostrum voluptatibus recusandae eum, velit dolores mollitia nam aliquid consectetur enim corporis perspiciatis repudiandae animi, sed hic tenetur!',
   },
   {
     mission_id: 2,
     mission_name: 'Telstar',
+    reserved: true,
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, consequatur ut. Distinctio nostrum voluptatibus recusandae eum, velit dolores mollitia nam aliquid consectetur enim corporis perspiciatis repudiandae animi, sed hic tenetur!',
   },
   {
     mission_id: 3,
     mission_name: 'JCSAT',
+    reserved: true,
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, consequatur ut. Distinctio nostrum voluptatibus recusandae eum, velit dolores mollitia nam aliquid consectetur enim corporis perspiciatis repudiandae animi, sed hic tenetur!',
   },
 ];
