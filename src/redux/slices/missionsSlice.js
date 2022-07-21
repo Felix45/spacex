@@ -4,14 +4,7 @@ import fetchMissions from '../../services/missionsService';
 const initialState = {
   isLoading: false,
   isFaild: false,
-  items: [
-    {
-      mission_id: 2,
-      mission_name: 'Telstar',
-      reserved: true,
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, consequatur ut. Distinctio nostrum voluptatibus recusandae eum, velit dolores mollitia nam aliquid consectetur enim corporis perspiciatis repudiandae animi, sed hic tenetur!',
-    },
-  ],
+  items: [],
 };
 
 export const fetchMissionsThunk = createAsyncThunk(

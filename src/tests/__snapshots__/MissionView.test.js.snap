@@ -32,40 +32,7 @@ exports[`Missions view renders correctly 1`] = `
           </th>
         </tr>
       </thead>
-      <tbody>
-        <tr>
-          <td
-            className="fw-bold"
-          >
-            Telstar
-          </td>
-          <td>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, consequatur ut. Distinctio nostrum voluptatibus recusandae eum, velit dolores mollitia nam aliquid consectetur enim corporis perspiciatis repudiandae animi, sed hic tenetur!
-          </td>
-          <td
-            className="align-middle"
-          >
-            <span
-              className="text-uppercase badge bg-info"
-            >
-               Active Member 
-            </span>
-          </td>
-          <td
-            className="align-middle"
-          >
-            <button
-              className="w-100 text-uppercase btn btn-outline-danger"
-              disabled={false}
-              id={2}
-              onClick={[Function]}
-              type="button"
-            >
-              Leave Mission
-            </button>
-          </td>
-        </tr>
-      </tbody>
+      <tbody />
     </table>
   </div>
 </div>
