@@ -4,6 +4,6 @@ import store from '../redux';
 import ProfileView from '../components/ProfileView';
 
 test('Missions view renders correctly', () => {
-  const tree = renderer.create(<Provider store={store}><ProfileView /></Provider>).toJSON();
+  const tree = renderer.create(<Provider store={store({})}><ProfileView /></Provider>).toJSON();
   expect(tree).toMatchSnapshot();
 });
