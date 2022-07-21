@@ -34,6 +34,9 @@ run `npm install` in the project folder.
 ### Usage
 run `npm run start`.
 
+### Run tests
+run `npm test`.
+
 ## Authors
 
 👤 **Hakim**
