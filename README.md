@@ -15,7 +15,8 @@
 
 ## Live Demos
 
-[SpaceX](https://spacex-hakim-felix.herokuapp.com/)
+[SpaceX on Heroku](https://spacex-hakim-felix.herokuapp.com/)
+[SpaceX on Netlify](https://62d9c49b370e0c0009139572--glistening-alpaca-1c3616.netlify.app/)
 
 
 ## Getting Started
