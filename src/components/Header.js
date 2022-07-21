@@ -9,6 +9,7 @@ import LogoImage from '../assets/images/logo.png';
 const navItems = [
   { to: '/', name: 'Rockets' },
   { to: '/missions', name: 'Missions' },
+  'divider',
   { to: '/profile', name: 'Profile' },
 ];
 const linkClassNames = ({ isActive }) => (isActive ? 'text-primary text-decoration-none' : 'text-secondary text-decoration-none');
@@ -26,17 +27,18 @@ const Header = () => (
           <Nav className="ms-auto">
             {
               navItems.map((navItem) => (
-                <>
-                  {navItem.name === 'Profile' && <div className="vr d-none d-md-block m-2" />}
-                  <Nav.Link key={navItem.name} as="div">
-                    <NavLink
-                      className={linkClassNames}
-                      to={navItem.to}
-                    >
-                      {navItem.name}
-                    </NavLink>
-                  </Nav.Link>
-                </>
+                navItem === 'divider'
+                  ? <div key="divider" className="vr d-none d-md-block m-2" />
+                  : (
+                    <Nav.Link key={navItem.name} as="div">
+                      <NavLink
+                        className={linkClassNames}
+                        to={navItem.to}
+                      >
+                        {navItem.name}
+                      </NavLink>
+                    </Nav.Link>
+                  )
               ))
             }
           </Nav>
