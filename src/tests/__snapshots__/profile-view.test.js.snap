@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProfileView component Renders correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="row"
+  >
+    <div
+      class="col-md-6"
+    >
+      <h2>
+        My Missions
+      </h2>
+      <div
+        class="list-group"
+      />
+    </div>
+    <div
+      class="col-md-6"
+    >
+      <h2>
+        My Rockets
+      </h2>
+      <div
+        class="list-group"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;

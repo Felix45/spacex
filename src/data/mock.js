@@ -1,4 +1,4 @@
-const ships = [
+const rockets = [
   {
     id: 1,
     rocket_name: 'Falcon1',
@@ -40,4 +40,4 @@ const missionData = [
   },
 ];
 
-export { ships, missionData };
+export { rockets, missionData };
