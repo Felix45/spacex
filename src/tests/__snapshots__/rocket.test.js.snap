@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Rocket component Renders correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="my-5 row"
+  >
+    <div
+      class="col-lg-3 col-md-6"
+    >
+      <div
+        class="card"
+      >
+        <img
+          alt="Falcon1"
+          class="card-img-top"
+          src="h"
+        />
+      </div>
+    </div>
+    <div
+      class="col-lg-9 col-md-6"
+    >
+      <div
+        class="card"
+      >
+        <div
+          class="card-body"
+        >
+          <div
+            class="card-title h5"
+          >
+            Falcon1
+          </div>
+          <p
+            class="card-text"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, consequatur ut. Distinctio nostrum voluptatibus recusandae eum, velit dolores mollitia nam aliquid consectetur enim corporis perspiciatis repudiandae animi, sed hic tenetur!
+          </p>
+          <button
+            class="btn btn-primary"
+            type="button"
+          >
+            Reserve Rocket
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

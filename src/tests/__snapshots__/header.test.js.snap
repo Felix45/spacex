@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header component Renders correctly 1`] = `
+<DocumentFragment>
+  <header>
+    <nav
+      class="navbar navbar-expand-md navbar-light bg-light fixed-top"
+    >
+      <div
+        class="container"
+      >
+        <a
+          class="navbar-brand"
+          href="/"
+        >
+          <img
+            alt="Logo"
+            class=""
+            height="28px"
+            src="logo.png"
+          />
+          <span
+            class="ms-2"
+          >
+            SpaceX
+          </span>
+        </a>
+        <button
+          aria-controls="basic-navbar-nav"
+          aria-label="Toggle navigation"
+          class="navbar-toggler collapsed"
+          type="button"
+        >
+          <span
+            class="navbar-toggler-icon"
+          />
+        </button>
+        <div
+          class="navbar-collapse collapse"
+          id="basic-navbar-nav"
+        >
+          <div
+            class="ms-auto navbar-nav"
+          >
+            <div
+              class="nav-link"
+            >
+              <a
+                aria-current="page"
+                class="text-primary text-decoration-none"
+                href="/"
+              >
+                Rockets
+              </a>
+            </div>
+            <div
+              class="nav-link"
+            >
+              <a
+                class="text-secondary text-decoration-none"
+                href="/missions"
+              >
+                Missions
+              </a>
+            </div>
+            <div
+              class="vr d-none d-md-block m-2"
+            />
+            <div
+              class="nav-link"
+            >
+              <a
+                class="text-secondary text-decoration-none"
+                href="/profile"
+              >
+                Profile
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+</DocumentFragment>
+`;

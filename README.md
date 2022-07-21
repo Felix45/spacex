@@ -15,7 +15,8 @@
 
 ## Live Demos
 
---Live demos here--
+[SpaceX on Heroku](https://spacex-hakim-felix.herokuapp.com/)
+[SpaceX on Netlify](https://62d9c49b370e0c0009139572--glistening-alpaca-1c3616.netlify.app/)
 
 
 ## Getting Started
@@ -34,6 +35,9 @@ run `npm install` in the project folder.
 ### Usage
 run `npm run start`.
 
+### Run tests
+run `npm test`.
+
 ## Authors
 
 👤 **Hakim**
@@ -41,9 +45,9 @@ run `npm run start`.
 - GitHub: [@teckim](https://github.com/teckim)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/baheddi-hakim/)
 
-**Felix**
+**Felix Ouma**
 
-- GitHub: [@teckim](https://github.com/felix45)
+- GitHub: [@Felix45](https://github.com/felix45)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/felix-ouma/)
 
 ## 🤝 Contributing
